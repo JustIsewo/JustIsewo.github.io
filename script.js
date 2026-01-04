@@ -66,6 +66,8 @@ function findExpectedHEX() {
 function createFieldRGBandHEXvalue() {
     let gameDiv = document.querySelector(".HEXtoRGB");
 
+    gameDiv.innerHTML = "";
+
     let RGBinput = document.createElement("input");
     RGBinput.type = "number";
     RGBinput.id = "RGBid";
@@ -80,6 +82,8 @@ function createFieldRGBandHEXvalue() {
 
 function createFieldHEXandRGBvalue() {
     let gameDiv = document.querySelector(".RGBtoHEX");
+
+    gameDiv.innerHTML = "";
 
     let HEXinput = document.createElement("input");
     HEXinput.type = "text";
@@ -98,6 +102,8 @@ function createFieldHEXandRGBvalue() {
 function congrats() {
     let gameDiv = document.querySelector(".output");
 
+    gameDiv.innerHTML = "";
+
     let congratsText = document.createElement("h1");    //also add an image of a you tried star
     congratsText.id = "outputText";
     congratsText.textContent = "Congrats!! You got it right! Also, you're autistic~";
@@ -107,6 +113,8 @@ function congrats() {
 
 function nuhUh() {
     let gameDiv = document.querySelector(".output");
+
+    gameDiv.innerHTML = "";
 
     let nuhUhText = document.createElement("h1");
     nuhUhText.id = "outputText";
